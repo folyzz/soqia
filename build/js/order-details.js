@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".select-step").selectStep({incrementLabel:"+",decrementLabel:"-"}),$("[data-cartoon-quantity]").change(function(){var t=$(this).val(),a=$(this).parents("[data-cartoon-info]"),e=t*a.attr("data-cartoon-price");a.find(".total-price-for-cartoons").text(e+" SAR")})});

@@ -1,0 +1,210 @@
+@import './variables';
+@import './mixins';
+.mosque-title{
+    margin-bottom: 20px !important;
+}
+// صف المسجد
+#mosque{
+    // عامود البحث
+    #search{
+        margin: 0px auto;
+        form{
+            .custom-search{
+                border: 1px solid $brand-lighten;
+                border-radius: 30px;
+                padding: 0px 50px 0px 15px;
+                position: relative;
+                &:hover,&:focus{
+                    border-color: transparent;
+                    box-shadow: 0px 0px 20px -9px $brand-lighten;
+                }
+            }
+            // ايقونة البحث
+            .input-group-btn{
+                .custom-submit{
+                    padding: 0px;
+                    margin: 0px;
+                    position: absolute;
+                    top: 5px;
+                    right: 33px;
+                    border: none;
+                }
+            }
+        } 
+    }
+    // الخريطة
+    #map{
+        .selected-num{
+            font-size: 14px;
+            padding: 3px 0;
+            position: relative;
+            top: 00px;
+            background: #dedede;
+            width: 100%;
+            box-shadow: 0px 6px 16px -11px;
+        }
+        iframe{
+            height: 350px;
+            width: 100%;
+            border: none;
+        }
+    }
+    // sliders
+    a{
+        outline: none;
+        // البطابقة
+        .card{
+            background: transparent;
+            border: none;
+            .card-body{
+                padding: 1.25rem 0;
+                .card-title{ // عدد الكرتون
+                    margin: 5px 0 34px;
+                    display: inline-block;
+                    font-size: 28px;
+                    font-weight: bold;
+                    color: $brand;
+                }
+                .card-img-top{ //الصورة
+                    height: 146px;
+                    width: 136px;
+                    margin: 0 auto;
+                }
+                ul{ // بيانات البطاقة
+                    padding: 0;
+                    display: inline-block;
+                    li{
+                        border: none;
+                        padding: 10px 0 0;
+                        font-weight: bold;
+                        color: #525252;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+// اشارة يسار يمين
+.slick-next,
+.slick-prev{
+    height: 29px;
+    width: 29px;
+    margin: 0px -10px;
+    &:before{
+        font-size: 30px;
+        color: $brand;
+    }
+    
+}
+
+@media (max-width: 1199px){
+    #mosque{
+        a{
+            .card{
+                .card-body{
+                    .card-title{
+                        margin: 5px 0 27px;
+                        font-size: 20px;
+                    }
+                    .card-img-top{
+                        height: 116px;
+                        width: 106px;
+                    }
+                    ul li{
+                        font-size: 13px;
+                        &:last-child{
+                            padding: 3px 0 0;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    #mosque{
+        #map{
+            .selected-num{
+                font-size: 12px;
+            }
+            iframe{
+                height: 315px;
+            }
+        }
+        a{
+            .card{
+                .card-body{
+                    .card-title{
+                        margin: 5px 0 20px;
+                        font-size: 17px;
+                    }
+                    .card-img-top{
+                        height: 93px;
+                        width: 83px;
+                    }
+                    ul li{
+                        font-size: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    #mosque{
+        #search form {
+            .custom-search {
+                padding: 0px 41px 0px 15px;
+                margin-bottom: 10px;
+            }
+            .input-group-btn{
+                .custom-submit{
+                    top: 8px;
+                    right: 50px;
+                }
+            }
+        }
+        #map{
+            iframe{
+                height: 315px;
+            }
+        }
+        
+        a{
+            .card{
+                .card-body{
+                    .card-title{
+                        margin: 5px 0 20px;
+                        font-size: 17px;
+                    }
+                    .card-img-top{
+                        height: 93px;
+                        width: 83px;
+                    }
+                    ul li{
+                        font-size: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    #shadow-layer .custom-shadow-layer .mosque-title{
+        font-size: 25px;
+    }
+    #mosque #search form {
+        .custom-search{
+            padding: 0px 38px 0px 15px;
+            font-size: 13px;
+        }
+        .input-group-btn .custom-submit {
+            top: 3px;
+            right:38px;
+        }
+    }
+    .slick-next, .slick-prev {
+        margin: 0px 0px;
+    }
+}

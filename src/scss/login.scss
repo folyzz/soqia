@@ -1,0 +1,165 @@
+@import './variables';
+@import './mixins';
+// الترحيب
+#welcome{
+    background: linear-gradient(45deg, #1D85BC, #56C2EA);
+    position: fixed;
+    right: 0;
+    height: 100%;
+    // الشعار والكلمة المفتاحية
+    .custom-welcome{
+        padding: 160px 90px 0px;
+        .custom-brand{
+            height: 250px;
+            width: 250px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        h1{
+            color: $white;
+            font-size: 6rem;
+            position: relative;
+            right: 9rem;
+        }
+    }   
+}
+// التسجيل
+#login{
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    padding: 145px 30px;
+    // الحقول
+    form{
+        .log-in-data{
+            .x-icon{ // الرجوع
+                position: absolute;
+                top: 20px;
+                color: $brand;
+                display: inline-block;
+                z-index: 9;
+            }
+            h2{ // سجل الان
+                color: $brand;
+                font-size: 3rem;
+            }
+            .form-group{ // بيانات الادخال
+                @include form-group ();
+            }
+        }
+        // من js plugin
+        .your-field{
+            @include your-field ();
+        }
+    }
+    // زر التسجيل
+    button{
+        @include button (6px 37%, 20px auto);
+    }
+    // زر تسجيل الدخول
+    .button2{
+        padding: 6px 30%;
+        font-size: 22px;  
+    }
+    // لدي حسساب
+    .ihaveaccount{
+        color: #656565;
+        font-size: 20px;
+        display: inline-block;
+        margin-top: 22px;
+    }
+}
+@media (max-width: 1199px){
+    #welcome .custom-welcome h1{
+        font-size: 4rem;
+    }
+    #login{
+        .button2 {
+            padding: 6px 29%;
+            font-size: 18px;
+        }
+        form .log-in-data h2{
+            font-size: 2rem;
+        }
+    }
+}
+@media (max-width: 991px){
+    #welcome .custom-welcome{
+        padding: 160px 40px 0px;
+        .custom-brand{
+            height: 150px;
+            width: 150px;
+        }
+        h1{
+            font-size: 5rem;
+            right: 6rem;
+        }
+        .h1-two{
+            font-size: 4rem;
+        }
+    }
+    #login{
+        padding: 120px 11px;
+        form{
+            .log-in-data{
+                h2{
+                    font-size: 2rem;
+                }
+                .form-group{
+                    margin-bottom: 0.5rem;
+                    input{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        button{
+            font-size: 20px;
+            padding: 3px 35%;
+        }
+        .button2 {
+            padding: 6px 26%;
+        }
+    }  
+}
+@media (max-width: 767px){
+    .custom-welcome-r{
+        position: relative;
+        top: -55px;
+        .custom-brand-r{
+            height: 80px;
+            width: 80px;
+            margin: 0px auto;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        h1{
+            color: $brand-lighten;
+            font-family: 'Tajawal', serif;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            display: inline-block;
+            position: relative;
+            left: -35px;
+        }
+    }
+    #login{
+        position: relative;
+        padding: 70px 11px 0px;
+        form {
+            .log-in-data{
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .ihaveaccount{
+            margin-top: 10px;
+        }
+    }
+}

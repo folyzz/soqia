@@ -1,0 +1,326 @@
+@import './variables';
+@import './mixins';
+@import './login';
+@import './contact-us';
+@import './offers';
+@import './choose-mosque';
+@import './order-details';
+@import './data-recipient';
+@import './payment.scss';
+@import './my-orders';
+@font-face {
+    font-family: JF;
+    src: url(../fonts/JF-Flat-Regular.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: JF;
+}
+// شريط scroll down
+::-webkit-scrollbar{
+    width: 9px;
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    background-color: $brand;
+}
+// navigation
+#navBar{
+    background: $white;
+    width: 100%;
+    padding: 0px 5%;
+    box-shadow: 0 0px 17px rgba(0, 0, 0, 0.1);
+    // الشعار
+    .navbar-header{
+        a{
+            height: 90px;
+            width: 80px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    // bars btn (md)
+    .custom-bars{
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        &:focus{box-shadow: none;}
+        position: relative;
+        // bars
+        .bars{
+            background-color: $brand;
+            position: absolute;
+            right: 0px;
+            width: 25px;
+            height: 3px;
+            transition: .5s;
+            &::before,&::after{
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 3px;
+                right: 0px;
+                background-color: $brand;
+                transition: .5s;
+            }
+            &::before{
+                top: -7px
+            }
+            &::after{
+                top: 7px
+            }
+        }
+        // .active added from JS
+        &.active .bars{
+            background-color: transparent;
+            &::before{
+                top: 0px;
+                transform: rotate(45deg);
+            }
+            &::after{
+                top: 0px;
+                transform: rotate(135deg);
+            }
+        }
+    }
+    // شريط التنقل
+    .custom-navigation{
+        font-size: 19px;
+        ul {
+            li {
+                &.active>a.nav-link{
+                    color: $brand;
+                    text-shadow: 0px 0px 2px $brand-lighten;
+                }
+                &:not(:last-child){
+                    margin-left: 10px;
+                }
+                a{
+                    color: $brand-lighten;
+                    transition: all .5s ease;
+                    &:hover{
+                        color: $brand;
+                        text-shadow: 0px 0px 2px $brand-lighten;
+                    }
+                }
+            }
+        }
+    }
+    // زر التسجيل
+    .custom-btn a{
+        font-size: 18px;
+        color: $brand;
+        background-color: $white;
+        border: 1.4px solid $brand;
+        border-radius: 20px;
+        padding: 3.5px 15px;
+        transition: all .4s ease;
+        &:hover{
+            text-decoration: none;
+            border-color: $white;
+            box-shadow: 0px 0px 20px -6px $brand-lighten;
+        }
+    }
+}
+// المقدمة
+#introduction{
+    background: linear-gradient(45deg, #1D85BC, #56C2EA);
+    padding: 17% 5% 13%;
+    text-align: right;
+    // الفيديو
+    .custom-video{
+        height: 100%;
+        video{
+            width: 100%;
+            height: auto;
+        }
+    }
+    // التفاصيل
+    .custom-details{
+        height: 100%;
+        h1{
+            color: $white;
+            font-size: 70px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+        p{
+            color: #c8e2ff;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        // زر الطلب
+        .custom-shopping a{
+            font-size: 23px;
+            font-weight: 400;
+            color: $white;
+            background-color: transparent;
+            border: 1.9px solid $white;
+            border-radius: 40px;
+            padding: 3px 55px 7px;
+            transition: all .4s ease;
+            &:hover{
+                text-decoration: none;
+                color: $white;
+                border-color: transparent;
+                box-shadow: 0px 0px 25px -15px #000;
+            }
+        }
+    }
+}
+// footer
+#footer{
+    font-weight: bold;
+    color: $brand;
+    background-color: #dee2e6;
+    padding-bottom: 10px;
+    // شعار الفوتر
+    .logo{
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        margin-top: 10px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    // الروابط
+    .link-social{
+        margin: 10px 0 10px;
+        ul{
+            padding: 0px;
+            li{
+                margin-right: 10px;
+                a{
+                    color: $brand-lighten;
+                    background-color: #fbfbfb;
+                    border-radius: 6px;
+                    transition: all .4s ease;
+                    &:hover{
+                        border: transparent;
+                        color: $brand;
+                        box-shadow: 0px 0px 20px -6px $brand-lighten;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px){
+    #introduction{
+        padding: 17% 5% 6%;
+        .custom-details{
+            h1{
+                font-size: 56px;
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 991px){
+    // index page
+    .custom-navigation{
+        font-size: 17px !important;
+        ul li:not(:last-child){
+            margin-left: 0px !important;
+        }
+    }
+    .custom-btn a{
+        font-size: 15px !important;
+        padding: 2.5px 11px !important;
+    }
+    .custom-details{
+        text-align: center;
+        margin: 26px auto 0px;
+    }
+}
+@media (max-width: 767px){
+    // index page
+    .navbar-header{
+        width: 100%;       
+        .navbar-brand{
+            float: left;
+        }
+    }
+    .custom-bars,.custom-btn{
+        position: relative;
+        top: 30px;
+        float: right;
+    }
+    #navbar-collapsed ul {
+        margin-top: 10px;
+        li a{
+            float: right;
+        }
+    }
+    
+}
+@media (max-width: 575px){
+    // index page
+    .navbar-header{
+        a{
+            height: 80px !important;
+            width: 70px !important;
+        }
+    }
+    .custom-bars,.custom-btn{
+        top: 25px;
+    }
+    #navBar .custom-bars{
+        margin-top: 4px;
+    }
+    #introduction{
+        padding: 45% 5% 30%;
+        .custom-details{
+            h1{
+                font-size: 46px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .custom-shopping a{
+                font-size: 19px;
+                padding: 3px 45px 7px;
+            }
+        }
+    }
+    #footer{
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
+        .link-social ul li a{
+            padding: 6px 14px;
+        }
+        .copyright{
+            margin: 0px;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 375px){
+    #introduction {
+        padding: 50% 5% 22%;
+        .custom-details {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 18px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 55px;
+            }
+        }
+    }
+}

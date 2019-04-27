@@ -1,0 +1,78 @@
+@import './variables';
+@import './mixins';
+// ادخل بيانات المستلم
+#shadow-layer .custom-shadow-layer .title-recipient{
+    margin-bottom: 45px;
+}
+// صف بيانات المستلم
+#recipient{
+    // حقل البيانات
+    form{
+        .recipient-data{
+            // اسم المسجد المختار
+            h2{
+                font-size: 20px;
+            }
+            .form-group{
+                input,textarea{
+                    font-size: 14px;
+                }
+            }
+        }
+        // زر التالي
+        #next-recipient{
+            @include a-btn (10px);
+            margin-bottom: 10px;
+            width: 70%;
+        }
+        // التخطي
+        .skip{
+            color: #888888;
+            text-decoration: underline; 
+        }
+    }
+}
+
+@media (max-width: 767px){
+    #shadow-layer .custom-shadow-layer .title-recipient{
+        font-size: 27px;
+    }
+    #recipient{
+        form{
+            #next-recipient{
+                width: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    #shadow-layer .custom-shadow-layer .title-recipient{
+        font-size: 28px;
+    }
+    #recipient{
+        form{
+            .recipient-data{
+                h2{
+                    font-size: 18px;
+                    margin-bottom: 20px;;
+                }
+                .form-group{
+                    input,textarea{
+                        font-size: 11px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            #next-recipient{
+                width: 100%;
+                font-size: 12px;
+            }
+            .skip{
+                font-size: 12px;
+                margin-top: 20px;
+                display: block;
+            }
+        }
+    }
+}
+

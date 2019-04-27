@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".custom-bars").click(function(){$(".custom-bars").toggleClass("active")}),$(function(){$(".validity").validity().on("submit",function(t){var i=$(this),n=i.find('[type="submit"]');n.button("loading"),i.valid()||(t.preventDefault(),n.button("reset"))})})});

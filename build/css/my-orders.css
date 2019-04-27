@@ -1,0 +1,27 @@
+#shadow-layer .custom-shadow-layer .my-orders-title {
+  font-size: 45px;
+  margin-bottom: 25px; }
+
+.progress-indicator > li:first-child .bubble:after,
+.progress-indicator > li:first-child .bubble:before {
+  margin-left: 0; }
+
+.progress-indicator > li:first-child .bubble:after {
+  display: none; }
+
+.progress-indicator > li:last-child .bubble:after,
+.progress-indicator > li:last-child .bubble:before {
+  margin-right: 0; }
+
+.progress-indicator > li:last-child .bubble:before {
+  display: none; }
+
+.progress-indicator > li {
+  color: #6f6f6f; }
+
+#orders h3 {
+  color: #1D85BC;
+  margin: 40px 0 20px; }
+
+#orders ul {
+  margin-bottom: 55px; }

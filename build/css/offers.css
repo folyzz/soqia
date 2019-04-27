@@ -1,0 +1,54 @@
+.no-offers {
+  margin: 230px auto;
+  display: none; }
+
+#title {
+  font-size: 30px !important;
+  margin-bottom: 15px !important; }
+
+.items .item .card {
+  width: 16rem;
+  border-radius: 20px;
+  margin: 15px auto;
+  transition: all .4s ease; }
+  .items .item .card:hover {
+    box-shadow: 0px 0px 25px -20px #000;
+    border-color: transparent; }
+  .items .item .card .card-body {
+    padding: 1.25rem 0; }
+    .items .item .card .card-body .card-img-top {
+      height: 156px;
+      width: 186px; }
+    .items .item .card .card-body .card-title {
+      margin: .75rem 0 0;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      color: #1D85BC; }
+    .items .item .card .card-body ul {
+      padding: 0;
+      display: inline-block; }
+      .items .item .card .card-body ul li {
+        border: none;
+        padding: .75rem 0 0;
+        font-weight: bold;
+        color: #3f3f3f; }
+    .items .item .card .card-body .card-link {
+      display: inline-block;
+      margin: .75rem 0 0; }
+      .items .item .card .card-body .card-link img {
+        height: 100%;
+        width: 100%; }
+    .items .item .card .card-body .visa {
+      height: 36px;
+      width: 36px; }
+    .items .item .card .card-body .paypal {
+      height: 32px;
+      width: 63px; }
+    .items .item .card .card-body .mada {
+      height: 32px;
+      width: 76px; }
+
+@media (max-width: 767px) {
+  .items .item .card {
+    width: 14.5rem; } }

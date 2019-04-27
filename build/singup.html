@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>سقيا | تسجيل الدخول </title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" id="login">
+                <!-- حقل تسجيل الدخول  -->
+                <form class="text-right validity" method="post">
+                    <div class="log-in-data">
+                        <!-- تخطي -->
+                        <a href="." class="x-icon"><i class="fas fa-times"></i></a>
+                        <!-- الترحيب للـ responsive -->
+                        <div class="custom-welcome-r text-center d-md-none">
+                            <div class="custom-brand-r">
+                                <img src="./img/logo-big.png" alt="سقيا">
+                            </div>
+                            <h1>أهلاً بعودتك !</h1>
+                        </div>
+                        <!-- حقول البيانات -->
+                        <h2>تسجيل الدخول</h2>
+                        <div class="form-group">
+                            <input type="tel" class="form-control your-field" placeholder="رقم الجوال" name="phone" maxlength="9" required pattern="[0-9]{2}[0-9]{3}[0-9]{4}" data-mismatch="يرجى مطابقة التنسيق المطلوب: 3498 722 53." data-missing="مطلوب.">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <!-- زر تسجيل الدخول -->
+                        <button class="btn text-center button2" type="submit">تسجيل الدخول</button><br>
+                        تريد حساب جديد؟ <a href="./login.html" class="lognow">سجل الآن</a>
+                    </div>
+                </form>
+            </div>
+            <!-- الترحيب -->
+            <div class="col-md-8 d-md-block d-none" id="welcome">
+                <div class="custom-welcome text-right">
+                    <div class="custom-brand">
+                        <img src="./img/logo-big.png" alt="سقيا">
+                    </div>
+                    <h1 class="h1-two">أهلاً بعودتك !</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/jquery.validity.min.js"></script>  
+        
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
