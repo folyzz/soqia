@@ -1,21 +1,368 @@
+@import url("http://www.fontstatic.com/f=flat-jooza");
+.mosque-title {
+  margin-bottom: 20px !important; }
+
+#mosque #search {
+  margin: 0px auto; }
+  #mosque #search form .custom-search {
+    border: 1px solid #56C2EA;
+    border-radius: 30px;
+    padding: 0px 50px 0px 15px;
+    position: relative; }
+    #mosque #search form .custom-search:hover, #mosque #search form .custom-search:focus {
+      border-color: transparent;
+      box-shadow: 0px 0px 20px -9px #56C2EA; }
+  #mosque #search form .input-group-btn .custom-submit {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 5px;
+    right: 33px;
+    border: none; }
+
+#mosque #map .selected-num {
+  font-size: 14px;
+  padding: 3px 0;
+  position: relative;
+  top: 00px;
+  background: #dedede;
+  width: 100%;
+  box-shadow: 0px 6px 16px -11px; }
+
+#mosque #map iframe {
+  height: 350px;
+  width: 100%;
+  border: none; }
+
+#mosque a {
+  outline: none; }
+  #mosque a .card {
+    background: transparent;
+    border: none; }
+    #mosque a .card .card-body {
+      padding: 1.25rem 0; }
+      #mosque a .card .card-body .card-title {
+        margin: 5px 0 34px;
+        display: inline-block;
+        font-size: 28px;
+        font-weight: bold;
+        color: #1D85BC; }
+      #mosque a .card .card-body .card-img-top {
+        height: 146px;
+        width: 136px;
+        margin: 0 auto; }
+      #mosque a .card .card-body ul {
+        padding: 0;
+        display: inline-block; }
+        #mosque a .card .card-body ul li {
+          border: none;
+          padding: 10px 0 0;
+          font-weight: bold;
+          color: #525252;
+          background: transparent; }
+
+.slick-next,
+.slick-prev {
+  height: 29px;
+  width: 29px;
+  margin: 0px -10px; }
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px;
+    color: #1D85BC; }
+
+@media (max-width: 1199px) {
+  #mosque a .card .card-body .card-title {
+    margin: 5px 0 27px;
+    font-size: 20px; }
+  #mosque a .card .card-body .card-img-top {
+    height: 116px;
+    width: 106px; }
+  #mosque a .card .card-body ul li {
+    font-size: 13px; }
+    #mosque a .card .card-body ul li:last-child {
+      padding: 3px 0 0; } }
+
+@media (max-width: 991px) {
+  #mosque #map .selected-num {
+    font-size: 12px; }
+  #mosque #map iframe {
+    height: 315px; }
+  #mosque a .card .card-body .card-title {
+    margin: 5px 0 20px;
+    font-size: 17px; }
+  #mosque a .card .card-body .card-img-top {
+    height: 93px;
+    width: 83px; }
+  #mosque a .card .card-body ul li {
+    font-size: 10px; } }
+
+@media (max-width: 767px) {
+  #mosque #search form .custom-search {
+    padding: 0px 41px 0px 15px;
+    margin-bottom: 10px; }
+  #mosque #search form .input-group-btn .custom-submit {
+    top: 8px;
+    right: 50px; }
+  #mosque #map iframe {
+    height: 315px; }
+  #mosque a .card .card-body .card-title {
+    margin: 5px 0 20px;
+    font-size: 17px; }
+  #mosque a .card .card-body .card-img-top {
+    height: 93px;
+    width: 83px; }
+  #mosque a .card .card-body ul li {
+    font-size: 10px; } }
+
+@media (max-width: 575px) {
+  #shadow-layer .custom-shadow-layer .mosque-title {
+    font-size: 25px; }
+  #mosque #search form .custom-search {
+    padding: 0px 38px 0px 15px;
+    font-size: 13px; }
+  #mosque #search form .input-group-btn .custom-submit {
+    top: 3px;
+    right: 38px; }
+  .slick-next, .slick-prev {
+    margin: 0px 0px; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+#shadow-layer {
+  padding: 9% 6% 4%; }
+  #shadow-layer .custom-shadow-layer {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 20px 0px 25px;
+    box-shadow: 0px 0px 40px -20px #56C2EA; }
+    #shadow-layer .custom-shadow-layer h1 {
+      color: #56C2EA;
+      margin-bottom: 90px; }
+    #shadow-layer .custom-shadow-layer form h2 {
+      color: #1D85BC;
+      font-size: 30px; }
+    #shadow-layer .custom-shadow-layer form .form-group .form-control {
+      border: 0;
+      border-bottom: 0.9px solid #a7e1ff; }
+    #shadow-layer .custom-shadow-layer form .form-group input, #shadow-layer .custom-shadow-layer form .form-group textarea {
+      color: #1D85BC;
+      background-color: transparent;
+      border-radius: 0;
+      font-size: 18px;
+      padding: 0; }
+      #shadow-layer .custom-shadow-layer form .form-group input:focus, #shadow-layer .custom-shadow-layer form .form-group textarea:focus {
+        box-shadow: none; }
+      #shadow-layer .custom-shadow-layer form .form-group input::placeholder, #shadow-layer .custom-shadow-layer form .form-group textarea::placeholder {
+        color: #bfbfbf; }
+    #shadow-layer .custom-shadow-layer form .form-group .error-message {
+      color: red;
+      margin: 0; }
+    #shadow-layer .custom-shadow-layer form button {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1D85BC;
+      border: 1px solid #a7e1ff;
+      border-radius: 30px;
+      padding: 6px 45%;
+      margin: 50px auto 0px; }
+      #shadow-layer .custom-shadow-layer form button:hover {
+        border-color: #fff;
+        box-shadow: 0px 0px 33px -14px #56C2EA; }
+      #shadow-layer .custom-shadow-layer form button:focus {
+        border-color: #fff;
+        box-shadow: 0px 0px 33px -14px #56C2EA; }
+    #shadow-layer .custom-shadow-layer form .your-field.error {
+      border: 0;
+      border-bottom: 1px solid #f17171 !important; }
+    #shadow-layer .custom-shadow-layer form .your-field.mismatch {
+      border: 0;
+      border-bottom: 1px solid #ffd071 !important; }
+    #shadow-layer .custom-shadow-layer form .your-field.valid {
+      border: 0;
+      border-bottom: 1px solid #a2d471 !important; }
+    #shadow-layer .custom-shadow-layer .links {
+      color: #8e8e8e; }
+      #shadow-layer .custom-shadow-layer .links ul {
+        margin: 3rem 0px 16px;
+        padding: 0;
+        font-size: 25px; }
+        #shadow-layer .custom-shadow-layer .links ul li {
+          margin-bottom: 10px; }
+          #shadow-layer .custom-shadow-layer .links ul li i {
+            color: #1D85BC; }
+          #shadow-layer .custom-shadow-layer .links ul li a {
+            color: #8e8e8e; }
+            #shadow-layer .custom-shadow-layer .links ul li a:hover {
+              text-decoration: none;
+              color: #1D85BC; }
+      #shadow-layer .custom-shadow-layer .links iframe {
+        border: none;
+        width: 80%;
+        float: right; }
+
+@media (max-width: 1199px) {
+  #shadow-layer {
+    padding: 12% 6% 4%; }
+    #shadow-layer .custom-shadow-layer h1 {
+      font-size: 32px;
+      margin-bottom: 50px; }
+    #shadow-layer .custom-shadow-layer iframe {
+      width: 100% !important; } }
+
+@media (max-width: 991px) {
+  #shadow-layer {
+    padding: 17% 6% 4%; }
+    #shadow-layer .custom-shadow-layer h1 {
+      font-size: 30px;
+      margin-bottom: 40px; }
+    #shadow-layer .custom-shadow-layer form button {
+      font-size: 20px;
+      font-weight: bold;
+      color: #1D85BC;
+      border: 1px solid #a7e1ff;
+      border-radius: 30px;
+      padding: 4px 43%;
+      margin: 50px auto 0px; }
+      #shadow-layer .custom-shadow-layer form button:hover {
+        border-color: #fff;
+        box-shadow: 0px 0px 33px -14px #56C2EA; }
+      #shadow-layer .custom-shadow-layer form button:focus {
+        border-color: #fff;
+        box-shadow: 0px 0px 33px -14px #56C2EA; }
+    #shadow-layer .custom-shadow-layer .links ul {
+      font-size: 24px; } }
+
+@media (max-width: 767px) {
+  #shadow-layer {
+    padding: 21% 6% 4%; }
+    #shadow-layer .custom-shadow-layer {
+      padding: 23px 0px 25px; }
+      #shadow-layer .custom-shadow-layer h1 {
+        font-size: 24px; }
+      #shadow-layer .custom-shadow-layer form {
+        margin: 0 4%; }
+        #shadow-layer .custom-shadow-layer form h2 {
+          font-size: 28px; }
+        #shadow-layer .custom-shadow-layer form .form-group {
+          margin: 0; }
+          #shadow-layer .custom-shadow-layer form .form-group input, #shadow-layer .custom-shadow-layer form .form-group textarea {
+            font-size: 20px; }
+        #shadow-layer .custom-shadow-layer form button {
+          margin: 35px auto 0px; }
+      #shadow-layer .custom-shadow-layer .links ul {
+        font-size: 21px;
+        padding: 0 27%; }
+      #shadow-layer .custom-shadow-layer .links iframe {
+        width: 90% !important;
+        float: none; } }
+
+@media (max-width: 575px) {
+  #shadow-layer {
+    padding: 34% 6% 4%; }
+    #shadow-layer .custom-shadow-layer h1 {
+      font-size: 16px;
+      margin-bottom: 20px; }
+    #shadow-layer .custom-shadow-layer form h2 {
+      font-size: 23px; }
+    #shadow-layer .custom-shadow-layer form .form-group input, #shadow-layer .custom-shadow-layer form .form-group textarea {
+      font-size: 17px; }
+    #shadow-layer .custom-shadow-layer form button {
+      margin: 25px auto 0px;
+      padding: 1px 39%; }
+    #shadow-layer .custom-shadow-layer .links ul {
+      margin: 2rem 0px 16px;
+      font-size: 16px;
+      padding: 0 23%; } }
+
+@media (max-width: 375px) {
+  #shadow-layer {
+    padding: 34% 6% 8%; }
+    #shadow-layer .custom-shadow-layer h1 {
+      font-size: 14px;
+      margin-bottom: 17px; }
+    #shadow-layer .custom-shadow-layer form h2 {
+      font-size: 20px; }
+    #shadow-layer .custom-shadow-layer form .form-group input, #shadow-layer .custom-shadow-layer form .form-group textarea {
+      font-size: 15px; }
+    #shadow-layer .custom-shadow-layer form button {
+      margin: 20px auto 0px;
+      padding: 0px 36%; }
+    #shadow-layer .custom-shadow-layer .links ul {
+      font-size: 14px;
+      margin: 1.5rem 0px 16px; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+#shadow-layer .custom-shadow-layer .title-recipient {
+  margin-bottom: 45px; }
+
+#recipient form .recipient-data h2 {
+  font-size: 20px; }
+
+#recipient form .recipient-data .form-group input, #recipient form .recipient-data .form-group textarea {
+  font-size: 14px; }
+
+#recipient form #next-recipient {
+  font-weight: bold;
+  color: #1D85BC;
+  border: 1px solid;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70%; }
+  #recipient form #next-recipient:hover {
+    border-color: #fff;
+    box-shadow: 0px 0px 20px -7px #56C2EA; }
+
+#recipient form .skip {
+  color: #888888;
+  text-decoration: underline; }
+
+@media (max-width: 767px) {
+  #shadow-layer .custom-shadow-layer .title-recipient {
+    font-size: 27px; }
+  #recipient form #next-recipient {
+    width: 90%; } }
+
+@media (max-width: 575px) {
+  #shadow-layer .custom-shadow-layer .title-recipient {
+    font-size: 28px; }
+  #recipient form .recipient-data h2 {
+    font-size: 18px;
+    margin-bottom: 20px; }
+  #recipient form .recipient-data .form-group input, #recipient form .recipient-data .form-group textarea {
+    font-size: 11px;
+    margin-bottom: 15px; }
+  #recipient form #next-recipient {
+    width: 100%;
+    font-size: 12px; }
+  #recipient form .skip {
+    font-size: 12px;
+    margin-top: 20px;
+    display: block; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
 #welcome {
   background: linear-gradient(45deg, #1D85BC, #56C2EA);
   position: fixed;
   right: 0;
   height: 100%; }
   #welcome .custom-welcome {
-    padding: 160px 90px 0px; }
+    padding: 225px 200px 0px 90px; }
     #welcome .custom-welcome .custom-brand {
-      height: 250px;
-      width: 250px; }
+      height: 102px;
+      width: 232px;
+      position: relative;
+      right: 9rem;
+      margin-top: 15px; }
       #welcome .custom-welcome .custom-brand img {
         height: 100%;
         width: 100%; }
     #welcome .custom-welcome h1 {
       color: #fff;
-      font-size: 6rem;
-      position: relative;
-      right: 9rem; }
+      font-size: 4rem;
+      margin-top: 20px; }
+    #welcome .custom-welcome .h1-two {
+      font-size: 3.5rem; }
 
 #login {
   background-color: #fff;
@@ -81,8 +428,6 @@
     margin-top: 22px; }
 
 @media (max-width: 1199px) {
-  #welcome .custom-welcome h1 {
-    font-size: 4rem; }
   #login .button2 {
     padding: 6px 29%;
     font-size: 18px; }
@@ -92,14 +437,8 @@
 @media (max-width: 991px) {
   #welcome .custom-welcome {
     padding: 160px 40px 0px; }
-    #welcome .custom-welcome .custom-brand {
-      height: 150px;
-      width: 150px; }
-    #welcome .custom-welcome h1 {
-      font-size: 5rem;
-      right: 6rem; }
     #welcome .custom-welcome .h1-two {
-      font-size: 4rem; }
+      font-size: 3rem; }
   #login {
     padding: 120px 11px; }
     #login form .log-in-data h2 {
@@ -119,15 +458,162 @@
     position: relative;
     top: -55px; }
     .custom-welcome-r .custom-brand-r {
-      height: 80px;
-      width: 80px;
+      height: 44px;
+      width: 102px;
       margin: 0px auto; }
       .custom-welcome-r .custom-brand-r img {
         height: 100%;
         width: 100%; }
     .custom-welcome-r h1 {
       color: #56C2EA;
-      font-family: 'Tajawal', serif;
+      font-size: 1.5rem;
+      margin-top: 10px;
+      display: inline-block;
+      position: relative;
+      left: -35px; }
+  #login {
+    position: relative;
+    padding: 70px 11px 0px; }
+    #login form .log-in-data h2 {
+      font-size: 2.5rem; }
+    #login .ihaveaccount {
+      margin-top: 10px; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+@import url("http://www.fontstatic.com/f=flat-jooza");
+#welcome {
+  background: linear-gradient(45deg, #1D85BC, #56C2EA);
+  position: fixed;
+  right: 0;
+  height: 100%; }
+  #welcome .custom-welcome {
+    padding: 225px 200px 0px 90px; }
+    #welcome .custom-welcome .custom-brand {
+      height: 102px;
+      width: 232px;
+      position: relative;
+      right: 9rem;
+      margin-top: 15px; }
+      #welcome .custom-welcome .custom-brand img {
+        height: 100%;
+        width: 100%; }
+    #welcome .custom-welcome h1 {
+      color: #fff;
+      font-size: 4rem;
+      margin-top: 20px; }
+    #welcome .custom-welcome .h1-two {
+      font-size: 3.5rem; }
+
+#login {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  padding: 145px 30px; }
+  #login form .log-in-data .x-icon {
+    position: absolute;
+    top: 20px;
+    color: #1D85BC;
+    display: inline-block;
+    z-index: 9; }
+  #login form .log-in-data h2 {
+    color: #1D85BC;
+    font-size: 3rem; }
+  #login form .log-in-data .form-group .form-control {
+    border: 0;
+    border-bottom: 0.9px solid #a7e1ff; }
+  #login form .log-in-data .form-group input, #login form .log-in-data .form-group textarea {
+    color: #1D85BC;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 0; }
+    #login form .log-in-data .form-group input:focus, #login form .log-in-data .form-group textarea:focus {
+      box-shadow: none; }
+    #login form .log-in-data .form-group input::placeholder, #login form .log-in-data .form-group textarea::placeholder {
+      color: #bfbfbf; }
+  #login form .log-in-data .form-group .error-message {
+    color: red;
+    margin: 0; }
+  #login form .your-field.error {
+    border: 0;
+    border-bottom: 1px solid #f17171 !important; }
+  #login form .your-field.mismatch {
+    border: 0;
+    border-bottom: 1px solid #ffd071 !important; }
+  #login form .your-field.valid {
+    border: 0;
+    border-bottom: 1px solid #a2d471 !important; }
+  #login button {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1D85BC;
+    border: 1px solid #a7e1ff;
+    border-radius: 30px;
+    padding: 6px 37%;
+    margin: 20px auto; }
+    #login button:hover {
+      border-color: #fff;
+      box-shadow: 0px 0px 33px -14px #56C2EA; }
+    #login button:focus {
+      border-color: #fff;
+      box-shadow: 0px 0px 33px -14px #56C2EA; }
+  #login .button2 {
+    padding: 6px 30%;
+    font-size: 22px; }
+  #login .ihaveaccount {
+    color: #656565;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 22px; }
+
+@media (max-width: 1199px) {
+  #login .button2 {
+    padding: 6px 29%;
+    font-size: 18px; }
+  #login form .log-in-data h2 {
+    font-size: 2rem; } }
+
+@media (max-width: 991px) {
+  #welcome .custom-welcome {
+    padding: 160px 40px 0px; }
+    #welcome .custom-welcome .h1-two {
+      font-size: 3rem; }
+  #login {
+    padding: 120px 11px; }
+    #login form .log-in-data h2 {
+      font-size: 2rem; }
+    #login form .log-in-data .form-group {
+      margin-bottom: 0.5rem; }
+      #login form .log-in-data .form-group input {
+        font-size: 18px; }
+    #login button {
+      font-size: 20px;
+      padding: 3px 35%; }
+    #login .button2 {
+      padding: 6px 26%; } }
+
+@media (max-width: 767px) {
+  .custom-welcome-r {
+    position: relative;
+    top: -55px; }
+    .custom-welcome-r .custom-brand-r {
+      height: 44px;
+      width: 102px;
+      margin: 0px auto; }
+      .custom-welcome-r .custom-brand-r img {
+        height: 100%;
+        width: 100%; }
+    .custom-welcome-r h1 {
+      color: #56C2EA;
       font-size: 1.5rem;
       margin-top: 10px;
       display: inline-block;
@@ -487,55 +973,63 @@
   .slick-next, .slick-prev {
     margin: 0px 0px; } }
 
-#orders {
-  font-family: JF; }
-  #orders .custom-order-img {
-    height: 156px;
-    width: 186px;
-    margin: 0 auto; }
-    #orders .custom-order-img img {
-      height: 100%;
-      width: 100%; }
-  #orders h4 {
-    display: inline-block;
-    margin: 22px auto 18px;
-    font-weight: 400; }
-  #orders .jquery-select-step-element {
-    font-size: 30px;
-    padding: 15px 85px;
-    color: #1D85BC;
-    border: none;
-    transition: all .4s ease; }
-    #orders .jquery-select-step-element .selectStepValue {
-      width: 3rem; }
-    #orders .jquery-select-step-element .decrementStep, #orders .jquery-select-step-element .incrementStep {
-      height: 100%;
-      width: 50px;
-      background: #fff;
-      line-height: 37px;
-      border: 1px solid;
-      border-radius: 35px;
-      transition: all .2s ease; }
-      #orders .jquery-select-step-element .decrementStep:hover, #orders .jquery-select-step-element .incrementStep:hover {
-        border-color: #fff;
-        box-shadow: 0px 0px 20px -5px #56C2EA; }
-  #orders #bill p {
-    display: inline-block;
-    color: #5e5e5e; }
-  #orders #bill .cartoon-total-price {
-    width: 50%;
-    text-align: right; }
-  #orders #bill .all-total-price {
-    color: #000; }
-  #orders #bill a {
-    font-weight: bold;
-    color: #1D85BC;
+.navbar-header #back-icon {
+  position: relative !important;
+  top: -20px !important; }
+
+#orders .custom-order-img {
+  height: 156px;
+  width: 186px;
+  margin: 0 auto; }
+  #orders .custom-order-img img {
+    height: 100%;
+    width: 100%; }
+
+#orders h4 {
+  display: inline-block;
+  margin: 22px auto 18px;
+  font-weight: 400; }
+
+#orders .jquery-select-step-element {
+  font-size: 30px;
+  padding: 15px 85px;
+  color: #1D85BC;
+  border: none;
+  transition: all .4s ease; }
+  #orders .jquery-select-step-element .selectStepValue {
+    width: 3rem; }
+  #orders .jquery-select-step-element .decrementStep, #orders .jquery-select-step-element .incrementStep {
+    height: 100%;
+    width: 50px;
+    background: #fff;
+    line-height: 37px;
     border: 1px solid;
-    border-radius: 30px;
-    margin-top: 10px; }
-    #orders #bill a:hover {
+    border-radius: 35px;
+    transition: all .2s ease; }
+    #orders .jquery-select-step-element .decrementStep:hover, #orders .jquery-select-step-element .incrementStep:hover {
       border-color: #fff;
-      box-shadow: 0px 0px 20px -7px #56C2EA; }
+      box-shadow: 0px 0px 20px -5px #56C2EA; }
+
+#orders #bill p {
+  display: inline-block;
+  color: #5e5e5e; }
+
+#orders #bill .cartoon-total-price {
+  width: 50%;
+  text-align: right; }
+
+#orders #bill .all-total-price {
+  color: #000; }
+
+#orders #bill a {
+  font-weight: bold;
+  color: #1D85BC;
+  border: 1px solid;
+  border-radius: 30px;
+  margin-top: 10px; }
+  #orders #bill a:hover {
+    border-color: #fff;
+    box-shadow: 0px 0px 20px -7px #56C2EA; }
 
 @media (max-width: 1199px) {
   #orders #bill .cartoon-total-price {
@@ -717,14 +1211,10 @@
 #orders ul {
   margin-bottom: 55px; }
 
-@font-face {
-  font-family: JF;
-  src: url(../fonts/JF-Flat-Regular.ttf); }
-
 body {
   margin: 0px;
   padding: 0px;
-  font-family: JF; }
+  font-family: 'flat-jooza'; }
 
 ::-webkit-scrollbar {
   width: 9px;
@@ -740,8 +1230,10 @@ body {
   padding: 0px 5%;
   box-shadow: 0 0px 17px rgba(0, 0, 0, 0.1); }
   #navBar .navbar-header a {
-    height: 90px;
-    width: 80px; }
+    height: 62px;
+    width: 122px;
+    position: relative;
+    top: 4px; }
     #navBar .navbar-header a img {
       width: 100%;
       height: 100%; }
@@ -814,6 +1306,8 @@ body {
     #introduction .custom-video video {
       width: 100%;
       height: auto; }
+    #introduction .custom-video video[poster] {
+      object-fit: cover; }
   #introduction .custom-details {
     height: 100%; }
     #introduction .custom-details h1 {
@@ -898,7 +1392,7 @@ body {
       float: left; }
   .custom-bars, .custom-btn {
     position: relative;
-    top: 30px;
+    top: 15px;
     float: right; }
   #navbar-collapsed ul {
     margin-top: 10px; }
@@ -907,8 +1401,9 @@ body {
 
 @media (max-width: 575px) {
   .navbar-header a {
-    height: 80px !important;
-    width: 70px !important; }
+    height: 73px !important;
+    width: 70px !important;
+    top: 0 !important; }
   .custom-bars, .custom-btn {
     top: 25px; }
   #navBar .custom-bars {
@@ -940,3 +1435,252 @@ body {
     #introduction .custom-details p {
       font-size: 14px;
       margin-bottom: 55px; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+#shadow-layer .custom-shadow-layer .my-orders-title {
+  font-size: 45px;
+  margin-bottom: 25px; }
+
+.progress-indicator > li:first-child .bubble:after,
+.progress-indicator > li:first-child .bubble:before {
+  margin-left: 0; }
+
+.progress-indicator > li:first-child .bubble:after {
+  display: none; }
+
+.progress-indicator > li:last-child .bubble:after,
+.progress-indicator > li:last-child .bubble:before {
+  margin-right: 0; }
+
+.progress-indicator > li:last-child .bubble:before {
+  display: none; }
+
+.progress-indicator > li {
+  color: #6f6f6f; }
+
+#orders h3 {
+  color: #1D85BC;
+  margin: 40px 0 20px; }
+
+#orders ul {
+  margin-bottom: 55px; }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+.no-offers {
+  margin: 230px auto;
+  display: none; }
+
+#title {
+  font-size: 30px !important;
+  margin-bottom: 15px !important; }
+
+.items .item .card {
+  width: 16rem;
+  border-radius: 20px;
+  margin: 15px auto;
+  transition: all .4s ease; }
+  .items .item .card:hover {
+    box-shadow: 0px 0px 25px -20px #000;
+    border-color: transparent; }
+  .items .item .card .card-body {
+    padding: 1.25rem 0; }
+    .items .item .card .card-body .card-img-top {
+      height: 156px;
+      width: 186px; }
+    .items .item .card .card-body .card-title {
+      margin: .75rem 0 0;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      color: #1D85BC; }
+    .items .item .card .card-body ul {
+      padding: 0;
+      display: inline-block; }
+      .items .item .card .card-body ul li {
+        border: none;
+        padding: .75rem 0 0;
+        font-weight: bold;
+        color: #3f3f3f; }
+    .items .item .card .card-body .card-link {
+      display: inline-block;
+      margin: .75rem 0 0; }
+      .items .item .card .card-body .card-link img {
+        height: 100%;
+        width: 100%; }
+    .items .item .card .card-body .visa {
+      height: 36px;
+      width: 36px; }
+    .items .item .card .card-body .paypal {
+      height: 32px;
+      width: 63px; }
+    .items .item .card .card-body .mada {
+      height: 32px;
+      width: 76px; }
+
+@media (max-width: 767px) {
+  .items .item .card {
+    width: 14.5rem; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+.navbar-header #back-icon {
+  position: relative !important;
+  top: -20px !important; }
+
+#orders .custom-order-img {
+  height: 156px;
+  width: 186px;
+  margin: 0 auto; }
+  #orders .custom-order-img img {
+    height: 100%;
+    width: 100%; }
+
+#orders h4 {
+  display: inline-block;
+  margin: 22px auto 18px;
+  font-weight: 400; }
+
+#orders .jquery-select-step-element {
+  font-size: 30px;
+  padding: 15px 85px;
+  color: #1D85BC;
+  border: none;
+  transition: all .4s ease; }
+  #orders .jquery-select-step-element .selectStepValue {
+    width: 3rem; }
+  #orders .jquery-select-step-element .decrementStep, #orders .jquery-select-step-element .incrementStep {
+    height: 100%;
+    width: 50px;
+    background: #fff;
+    line-height: 37px;
+    border: 1px solid;
+    border-radius: 35px;
+    transition: all .2s ease; }
+    #orders .jquery-select-step-element .decrementStep:hover, #orders .jquery-select-step-element .incrementStep:hover {
+      border-color: #fff;
+      box-shadow: 0px 0px 20px -5px #56C2EA; }
+
+#orders #bill p {
+  display: inline-block;
+  color: #5e5e5e; }
+
+#orders #bill .cartoon-total-price {
+  width: 50%;
+  text-align: right; }
+
+#orders #bill .all-total-price {
+  color: #000; }
+
+#orders #bill a {
+  font-weight: bold;
+  color: #1D85BC;
+  border: 1px solid;
+  border-radius: 30px;
+  margin-top: 10px; }
+  #orders #bill a:hover {
+    border-color: #fff;
+    box-shadow: 0px 0px 20px -7px #56C2EA; }
+
+@media (max-width: 1199px) {
+  #orders #bill .cartoon-total-price {
+    width: 55%; } }
+
+@media (max-width: 991px) {
+  #orders #bill .cartoon-total-price {
+    width: 70%; } }
+
+@media (max-width: 767px) {
+  #shadow-layer .custom-shadow-layer .title-order {
+    font-size: 40px;
+    margin-bottom: 35px !important; }
+  #orders .jquery-select-step-element {
+    margin-bottom: 20px; } }
+
+@media (max-width: 375px) {
+  #orders #bill .cartoon-total-price {
+    width: 74%;
+    font-size: 14px; }
+  #orders .jquery-select-step-element {
+    margin-bottom: 30px; } }
+
+@import url("http://www.fontstatic.com/f=flat-jooza");
+#shadow-layer .custom-shadow-layer .title-payment {
+  font-size: 65px;
+  margin-bottom: 70px; }
+
+#payment {
+  margin-bottom: 40px; }
+  #payment h4 {
+    color: #1D85BC;
+    margin-bottom: 15px; }
+  #payment ul {
+    list-style: none;
+    padding: 0; }
+    #payment ul li {
+      height: 60px;
+      border-bottom: 1px solid #e4e4e4;
+      cursor: pointer; }
+      #payment ul li .pay {
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        position: relative; }
+        #payment ul li .pay input {
+          display: none;
+          position: relative;
+          top: 7px;
+          margin-left: 5px; }
+          #payment ul li .pay input:checked ~ span {
+            color: #46cead;
+            text-shadow: 0 0 20px #62ddbd;
+            transform: scale(1.05); }
+        #payment ul li .pay span {
+          color: #9c9c9c;
+          transition: all .2s ease; }
+        #payment ul li .pay .card-link {
+          position: absolute;
+          left: 0;
+          float: left; }
+          #payment ul li .pay .card-link img {
+            height: 100%;
+            width: 100%; }
+        #payment ul li .pay .mada {
+          height: 32px;
+          width: 76px; }
+        #payment ul li .pay .visa {
+          height: 36px;
+          width: 36px; }
+        #payment ul li .pay .paypal {
+          height: 32px;
+          width: 63px;
+          position: absolute;
+          left: -13px; }
+
+#orders .cartoons-num {
+  color: #1D85BC;
+  font-weight: bold; }
+
+#orders #bill .payment-btn {
+  color: #46cead;
+  border-color: #46cead;
+  transition: all .3s ease; }
+  #orders #bill .payment-btn:hover {
+    color: #fff;
+    background-color: #46cead;
+    border-color: #46cead;
+    box-shadow: 0px 0px 20px -6px #46cead; }
+
+@media (max-width: 767px) {
+  #shadow-layer .custom-shadow-layer .title-payment {
+    font-size: 65px;
+    margin-bottom: 50px; }
+  #orders .cartoons-num {
+    margin-bottom: 30px; } }
+
+@media (max-width: 575px) {
+  #shadow-layer .custom-shadow-layer .title-payment {
+    font-size: 50px;
+    margin-bottom: 40px; }
+  #payment h4 {
+    font-size: 19px; } }

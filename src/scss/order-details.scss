@@ -1,7 +1,10 @@
 @import './variables';
 @import './mixins';
+.navbar-header #back-icon{
+    position: relative !important;
+    top: -20px !important;
+}
 #orders{
-    font-family: JF;
     .custom-order-img{
         height: 156px;
         width: 186px;

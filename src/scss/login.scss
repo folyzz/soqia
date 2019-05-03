@@ -8,10 +8,13 @@
     height: 100%;
     // الشعار والكلمة المفتاحية
     .custom-welcome{
-        padding: 160px 90px 0px;
+        padding: 225px 200px 0px 90px;
         .custom-brand{
-            height: 250px;
-            width: 250px;
+            height: 102px;
+            width: 232px;
+            position: relative;
+            right: 9rem;
+            margin-top: 15px;
             img{
                 height: 100%;
                 width: 100%;
@@ -19,9 +22,11 @@
         }
         h1{
             color: $white;
-            font-size: 6rem;
-            position: relative;
-            right: 9rem;
+            font-size: 4rem;
+            margin-top: 20px;
+        }
+        .h1-two{
+            font-size: 3.5rem;
         }
     }   
 }
@@ -73,9 +78,7 @@
     }
 }
 @media (max-width: 1199px){
-    #welcome .custom-welcome h1{
-        font-size: 4rem;
-    }
+    
     #login{
         .button2 {
             padding: 6px 29%;
@@ -89,16 +92,8 @@
 @media (max-width: 991px){
     #welcome .custom-welcome{
         padding: 160px 40px 0px;
-        .custom-brand{
-            height: 150px;
-            width: 150px;
-        }
-        h1{
-            font-size: 5rem;
-            right: 6rem;
-        }
         .h1-two{
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
     #login{
@@ -130,8 +125,8 @@
         position: relative;
         top: -55px;
         .custom-brand-r{
-            height: 80px;
-            width: 80px;
+            height: 44px;
+            width: 102px;
             margin: 0px auto;
             img{
                 height: 100%;
@@ -140,7 +135,6 @@
         }
         h1{
             color: $brand-lighten;
-            font-family: 'Tajawal', serif;
             font-size: 1.5rem;
             margin-top: 10px;
             display: inline-block;

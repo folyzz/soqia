@@ -3,6 +3,7 @@ var cleanCSS = require('gulp-clean-css');
 var minifyCSS = require('gulp-minify-css')
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
+var concat = require('gulp-concat');
 var del = require('del');
 var sassToCSS = require('gulp-sass');
 
@@ -16,6 +17,7 @@ gulp.task('css', function() {
     return gulp.src('src/css/*.css')
     .pipe(cleanCSS())
     .pipe(minifyCSS({keepSpecialComments: 1}))
+    .pipe(concat('plugins.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(connect.reload());
 });
@@ -23,6 +25,7 @@ gulp.task('css', function() {
 gulp.task('scss', function() {
     return gulp.src('src/scss/*.scss')
     .pipe(sassToCSS())
+    .pipe(concat('main.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(connect.reload());
 });

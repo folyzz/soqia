@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/jquery-select-step.css">
+    <link rel="stylesheet" href="css/plugins.css">
     <link rel="icon" href="./img/logo.png">
     <link rel="stylesheet" href="css/main.css">
 
@@ -27,9 +27,10 @@
                     <!-- الشعار والزر -->
                     <div class="navbar-header">
                         <!-- back icon -->
-                        <a href="./choose-mosque.html" class="d-none d-md-inline"><i class="fas fa-arrow-right"></i></a>
+                        <a href="./choose-mosque.html" class="d-none d-md-inline" id="back-icon"><i class="fas fa-arrow-right"></i></a>
                         <a href="." class="navbar-brand">
-                            <img src="img/logo.png" alt="موقع سقيا">
+                            <img class="d-none d-sm-block" src="img/logo-brand.png" alt="موقع سقيا">
+                            <img class="d-sm-none" src="img/logo.png" alt="موقع سقيا">
                         </a>
                         <!-- back & login md -->
                         <div class="custom-btn navbar-toggler btn">
@@ -73,7 +74,7 @@
                         <div class="custom-order-img">
                             <img src="./img/water.png" alt="">
                         </div>
-                        <h4>20 قارورة &times; 330 مل</h4><br>
+                        <h4>12 قارورة &times; 330 مل</h4><br>
                         <select name="demo" id="demo" class="select-step" data-cartoon-quantity>
                             <option value="1">20</option>
                             <option value="2">40</option>

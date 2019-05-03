@@ -8,15 +8,12 @@
 @import './data-recipient';
 @import './payment.scss';
 @import './my-orders';
-@font-face {
-    font-family: JF;
-    src: url(../fonts/JF-Flat-Regular.ttf);
-}
+@import url("http://www.fontstatic.com/f=flat-jooza");
 
 body{
     margin: 0px;
     padding: 0px;
-    font-family: JF;
+    font-family: 'flat-jooza';
 }
 // شريط scroll down
 ::-webkit-scrollbar{
@@ -36,8 +33,10 @@ body{
     // الشعار
     .navbar-header{
         a{
-            height: 90px;
-            width: 80px;
+            height: 62px;
+            width: 122px;
+            position: relative;
+            top: 4px;
             img{
                 width: 100%;
                 height: 100%;
@@ -138,6 +137,9 @@ body{
         video{
             width: 100%;
             height: auto;
+        }
+        video[poster]{
+            object-fit: cover;
         }
     }
     // التفاصيل
@@ -255,7 +257,7 @@ body{
     }
     .custom-bars,.custom-btn{
         position: relative;
-        top: 30px;
+        top: 15px;
         float: right;
     }
     #navbar-collapsed ul {
@@ -270,8 +272,9 @@ body{
     // index page
     .navbar-header{
         a{
-            height: 80px !important;
+            height: 73px !important;
             width: 70px !important;
+            top: 0 !important;
         }
     }
     .custom-bars,.custom-btn{
